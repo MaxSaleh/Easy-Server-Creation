@@ -30,36 +30,45 @@ public class MainFrame extends JPanel {
         DrawButton.drawButtonVanilla("Vanilla", (Constants.displayWidth / 2) - (buttonWidth / 2) - 440, 10, buttonWidth, 50, Color.WHITE, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                System.out.println("Has clicked vanilla button.");
+                clickedVanilla = true;
             }
         }, this);
 
         DrawButton.drawButtonForge("Forge", (Constants.displayWidth / 2) - (buttonWidth / 2) - 220, 10, buttonWidth, 50, Color.WHITE, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                System.out.println("Has clicked forge button.");
+                clickedForge = true;
             }
         }, this);
 
         DrawButton.drawButtonForgeSpigot("Forge & Spigot", (Constants.displayWidth / 2) - (buttonWidth / 2), 10, buttonWidth, 50, Color.WHITE, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                System.out.println("Has clicked forge & spigot button.");
+                clickedForgeSpigot = true;
             }
         }, this);
 
         DrawButton.drawButtonProxies("Proxies", (Constants.displayWidth / 2) - (buttonWidth / 2) + 220, 10, buttonWidth, 50, Color.WHITE, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                System.out.println("Has clicked proxies button.");
+                clickedProxies = true;
             }
         }, this);
 
         DrawButton.drawButtonPocketEdition("Pocket Edition", (Constants.displayWidth / 2) - (buttonWidth / 2) + 440, 10, buttonWidth, 50, Color.WHITE, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                System.out.println("Has clicked pocket edition button.");
+                clickedPocketEdition = true;
             }
         }, this);
 
         DrawUtils.drawRectangle(0, 0, Constants.displayWidth, 70, Color.RED, g);
-
-        DrawUtils.drawText("Please click a server software button.", Constants.displayWidth / 2, 100, 30, Color.WHITE, g);
+        DrawUtils.drawText("Please click a server software button.", Constants.displayWidth / 2 - 218, 100, 30, Color.WHITE, g);
 
     }
 
