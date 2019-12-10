@@ -25,7 +25,7 @@ public class ServerCreation {
         frm.setTitle(Constants.PROGRAM_NAME + " - " + Constants.PROGRAM_VERSION);
         frm.setContentPane(mainPingPongGUI);
         frm.setSize(Constants.displayWidth, Constants.displayHeight);
-        frm.setResizable(true);
+        frm.setResizable(false);
         frm.setVisible(true);
         frm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frm.setLocationRelativeTo(null);
