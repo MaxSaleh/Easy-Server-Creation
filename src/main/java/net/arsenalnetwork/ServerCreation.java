@@ -1,6 +1,7 @@
 package net.arsenalnetwork;
 
 import net.arsenalnetwork.frame.MainFrame;
+import net.arsenalnetwork.softwares.GetServerSoftwares;
 import net.arsenalnetwork.utilities.Constants;
 
 import javax.imageio.ImageIO;
@@ -16,8 +17,9 @@ public class ServerCreation {
 
     public static JFrame frm = new JFrame();
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         mainGUI();
+        GetServerSoftwares.getSoftwares();
     }
 
     private static void mainGUI() {
@@ -31,6 +33,7 @@ public class ServerCreation {
         frm.setLocationRelativeTo(null);
 
         // Sets the Icon from the resources
+        /**
         URL res = Constants.class.getClassLoader().getResource("icon.png");
         File file = null;
         try {
@@ -45,7 +48,7 @@ public class ServerCreation {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        frm.setIconImage(myImg);
+        frm.setIconImage(myImg);**/
     }
 
 }
